@@ -67,7 +67,7 @@ function searchYoutube($q){
     $q=urlencode($q);
 
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=4&q='.$q.'&key=AIzaSyDuup9R603lc9dRwFkZsP2RjhePmMBXd54'); 
+    curl_setopt($ch, CURLOPT_URL, 'https://www.googleapis.com/youtube/v3/search?part=snippet&regionCode=ID&maxResults=4&q='.$q.'&key=AIzaSyDuup9R603lc9dRwFkZsP2RjhePmMBXd54'); 
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
     curl_setopt($ch, CURLOPT_ENCODING, 'gzip, deflate');
