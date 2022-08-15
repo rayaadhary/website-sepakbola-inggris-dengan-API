@@ -6,7 +6,7 @@ $response = [
         "method" => "GET",
         "header" => "Content-Type: application/json\r\n" .
             "X-RapidAPI-Host: football98.p.rapidapi.com\r\n" .
-            "X-RapidAPI-Key: 26633e28f7mshd9a836d8ec70a10p1a1c4ajsn1dd9bd8e6807\r\n"
+            "X-RapidAPI-Key: efa5fbcdb5msh8ad27aa46b17547p1e542bjsn21cfd76b7926\r\n"
     ]
 ];
 
@@ -26,7 +26,7 @@ function table() {
         "method" => "GET",
         "header" => "Content-Type: application/json\r\n" .
             "X-RapidAPI-Host: football98.p.rapidapi.com\r\n" .
-            "X-RapidAPI-Key: 26633e28f7mshd9a836d8ec70a10p1a1c4ajsn1dd9bd8e6807\r\n"
+            "X-RapidAPI-Key: efa5fbcdb5msh8ad27aa46b17547p1e542bjsn21cfd76b7926\r\n"
     ]
 ];
 
@@ -47,7 +47,7 @@ function results() {
         "method" => "GET",
         "header" => "Content-Type: application/json\r\n" .
             "X-RapidAPI-Host: football98.p.rapidapi.com\r\n" .
-            "X-RapidAPI-Key: 26633e28f7mshd9a836d8ec70a10p1a1c4ajsn1dd9bd8e6807\r\n"
+            "X-RapidAPI-Key: efa5fbcdb5msh8ad27aa46b17547p1e542bjsn21cfd76b7926\r\n"
     ]
 ];
 
@@ -67,7 +67,7 @@ function searchYoutube($q){
     $q=urlencode($q);
 
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&q='.$q.'&key=AIzaSyDuup9R603lc9dRwFkZsP2RjhePmMBXd54'); 
+    curl_setopt($ch, CURLOPT_URL, 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=4&q='.$q.'&key=AIzaSyDuup9R603lc9dRwFkZsP2RjhePmMBXd54'); 
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
     curl_setopt($ch, CURLOPT_ENCODING, 'gzip, deflate');

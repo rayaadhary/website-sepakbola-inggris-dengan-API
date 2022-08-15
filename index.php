@@ -57,7 +57,6 @@
         <div class="d-flex align-items-center">
           <div class="site-logo">
             <a href="index.php">
-              <!-- <img src="images/logo.png" alt="Logo"> -->
               <h3>BOLATAKOTAK</h3>
             </a>
           </div>
@@ -146,10 +145,9 @@
             $youtube = searchYoutube($q);
             $yt = $youtube["items"];
             foreach ($yt as $y) {
-              
             ?>
-          <div class="col-md-4 mb-3 ml-3">
-          <iframe width="400" height="300" src="https://www.youtube.com/embed/<?=$y["id"]["videoId"]?>" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="col-md-6 mb-3">
+          <iframe width="500" height="400" src="https://www.youtube.com/embed/<?=$y["id"]["videoId"]?>" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
           </div>
           <?php
           }
